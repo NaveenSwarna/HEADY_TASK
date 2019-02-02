@@ -23,12 +23,12 @@
 		0163769B22022C5600825F42 /* Heady.db in Resources */ = {isa = PBXBuildFile; fileRef = 0163769A22022C5600825F42 /* Heady.db */; };
 		0163769E22022D1500825F42 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0163769D22022D1500825F42 /* libsqlite3.tbd */; };
 		016376A022022D4900825F42 /* HTDBAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163769F22022D4900825F42 /* HTDBAdapter.swift */; };
+		01CF3F882205B2BB0009950A /* HTProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CF3F862205B2BB0009950A /* HTProductsVC.swift */; };
+		01CF3F892205B2BB0009950A /* HTProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CF3F872205B2BB0009950A /* HTProductsVC.xib */; };
 		400079FE2204501600895DFB /* HTSubCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400079FC2204501600895DFB /* HTSubCategoriesVC.swift */; };
 		400079FF2204501600895DFB /* HTSubCategoriesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 400079FD2204501600895DFB /* HTSubCategoriesVC.xib */; };
 		40007A062204513400895DFB /* HTChildCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007A042204513400895DFB /* HTChildCategoriesVC.swift */; };
 		40007A072204513400895DFB /* HTChildCategoriesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40007A052204513400895DFB /* HTChildCategoriesVC.xib */; };
-		40007A0E2204535600895DFB /* HTProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007A0C2204535600895DFB /* HTProductListVC.swift */; };
-		40007A0F2204535600895DFB /* HTProductListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40007A0D2204535600895DFB /* HTProductListVC.xib */; };
 		40007A162204621C00895DFB /* HTProductInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007A142204621C00895DFB /* HTProductInfoVC.swift */; };
 		40007A172204621C00895DFB /* HTProductInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40007A152204621C00895DFB /* HTProductInfoVC.xib */; };
 		40007A1B220467FC00895DFB /* HTVariantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007A19220467FC00895DFB /* HTVariantCell.swift */; };
@@ -75,12 +75,12 @@
 		0163769A22022C5600825F42 /* Heady.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Heady.db; sourceTree = "<group>"; };
 		0163769D22022D1500825F42 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0163769F22022D4900825F42 /* HTDBAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTDBAdapter.swift; sourceTree = "<group>"; };
+		01CF3F862205B2BB0009950A /* HTProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTProductsVC.swift; sourceTree = "<group>"; };
+		01CF3F872205B2BB0009950A /* HTProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTProductsVC.xib; sourceTree = "<group>"; };
 		400079FC2204501600895DFB /* HTSubCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTSubCategoriesVC.swift; sourceTree = "<group>"; };
 		400079FD2204501600895DFB /* HTSubCategoriesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTSubCategoriesVC.xib; sourceTree = "<group>"; };
 		40007A042204513400895DFB /* HTChildCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTChildCategoriesVC.swift; sourceTree = "<group>"; };
 		40007A052204513400895DFB /* HTChildCategoriesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTChildCategoriesVC.xib; sourceTree = "<group>"; };
-		40007A0C2204535600895DFB /* HTProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTProductListVC.swift; sourceTree = "<group>"; };
-		40007A0D2204535600895DFB /* HTProductListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTProductListVC.xib; sourceTree = "<group>"; };
 		40007A142204621C00895DFB /* HTProductInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTProductInfoVC.swift; sourceTree = "<group>"; };
 		40007A152204621C00895DFB /* HTProductInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTProductInfoVC.xib; sourceTree = "<group>"; };
 		40007A19220467FC00895DFB /* HTVariantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTVariantCell.swift; sourceTree = "<group>"; };
@@ -327,7 +327,7 @@
 		40007A0A2204532B00895DFB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				40007A0D2204535600895DFB /* HTProductListVC.xib */,
+				01CF3F872205B2BB0009950A /* HTProductsVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,7 +335,7 @@
 		40007A0B2204533400895DFB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				40007A0C2204535600895DFB /* HTProductListVC.swift */,
+				01CF3F862205B2BB0009950A /* HTProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -487,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01CF3F892205B2BB0009950A /* HTProductsVC.xib in Resources */,
 				016376602201F12B00825F42 /* LaunchScreen.storyboard in Resources */,
 				400079FF2204501600895DFB /* HTSubCategoriesVC.xib in Resources */,
 				0163765D2201F12B00825F42 /* Assets.xcassets in Resources */,
@@ -494,7 +495,6 @@
 				0163765B2201F12A00825F42 /* Main.storyboard in Resources */,
 				40007A072204513400895DFB /* HTChildCategoriesVC.xib in Resources */,
 				016376922201F39900825F42 /* HTHomeVC.xib in Resources */,
-				40007A0F2204535600895DFB /* HTProductListVC.xib in Resources */,
 				0163769B22022C5600825F42 /* Heady.db in Resources */,
 				40007A172204621C00895DFB /* HTProductInfoVC.xib in Resources */,
 			);
@@ -529,8 +529,8 @@
 				016376912201F39900825F42 /* HTHomeVC.swift in Sources */,
 				016376562201F12A00825F42 /* AppDelegate.swift in Sources */,
 				400079FE2204501600895DFB /* HTSubCategoriesVC.swift in Sources */,
-				40007A0E2204535600895DFB /* HTProductListVC.swift in Sources */,
 				016376982201F50700825F42 /* HTHomeModel.swift in Sources */,
+				01CF3F882205B2BB0009950A /* HTProductsVC.swift in Sources */,
 				40007A062204513400895DFB /* HTChildCategoriesVC.swift in Sources */,
 				0163768A2201F26D00825F42 /* Constants.swift in Sources */,
 				016376A022022D4900825F42 /* HTDBAdapter.swift in Sources */,

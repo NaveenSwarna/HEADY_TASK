@@ -35,7 +35,7 @@ class HTChildCategoriesVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
-        let vc = HTProductListVC(nibName: nil, bundle: nil)
+        let vc = HTProductsVC(nibName: nil, bundle: nil)
         vc.productList = cateGoryArray[indexPath.row].productList
         self.navigationController?.pushViewController(vc, animated: true)
        
