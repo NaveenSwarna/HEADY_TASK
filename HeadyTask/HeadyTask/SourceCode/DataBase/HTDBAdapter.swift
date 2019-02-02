@@ -264,6 +264,7 @@ class HTDBAdapter: NSObject {
     
     func fetchCategoryData( _ parentCatId : Int) -> [HTCategoryModel] {
         
+        openDatabase()
         var categoryModels : [HTCategoryModel] = []
         let queryString = "SELECT * FROM Category where PARENTCID = ?"
         

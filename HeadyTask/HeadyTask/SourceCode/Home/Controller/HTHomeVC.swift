@@ -34,6 +34,15 @@ class HTHomeVC: UIViewController {
             if status {
                 HTDBAdapter.sharedInstance.saveDataToDataBase(fullData)
             }
+            else{
+                let alertController = UIAlertController(title: nil, message: "Please check your Internet Connection", preferredStyle:UIAlertController.Style.alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+                { action -> Void in
+                    
+                    alertController.dismiss(animated: true, completion: nil)
+                })
+                self.present(alertController, animated: true, completion: nil)
+            }
             
             self.fetchDataforThisScreen()
             

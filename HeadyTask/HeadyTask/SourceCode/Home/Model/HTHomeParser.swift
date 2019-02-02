@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct HTHomeParser {
     
@@ -15,6 +16,12 @@ struct HTHomeParser {
     
     
     func getHomeScreenData(_ onCompletion: @escaping JsonResponse) {
+        
+        if !UIDevice.isConnectedToNetwork {
+            
+            onCompletion([],false)
+            
+        }
         
         HeadyParser.sharedInstance.makeHTTPGetRequest(path: GET_URL) { (response , status)  in
             
